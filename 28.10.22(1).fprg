@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Logesh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:30:04 AM"/>
+        <attribute name="created" value="TG9nZXNoO0RFU0tUT1AtRkJCOU5JNTsyMDIyLTEwLTI4OzA5OjI0OjAwIEFNOzI5MTc="/>
+        <attribute name="edited" value="TG9nZXNoO0RFU0tUT1AtRkJCOU5JNTsyMDIyLTEwLTI4OzEwOjMwOjA0IEFNOzE7MzAxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="String" array="False" size=""/>
+            <output expression="&quot;enter name&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter roll no&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="String" array="False" size=""/>
+            <output expression="&quot;enter address&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="d" type="String" array="False" size=""/>
+            <output expression="&quot;enter BG&quot;" newline="True"/>
+            <input variable="d"/>
+            <declare name="e" type="Integer" array="False" size=""/>
+            <input variable="e"/>
+            <declare name="f" type="String" array="False" size=""/>
+            <output expression="&quot;enter department&quot;" newline="True"/>
+            <input variable="f"/>
+            <output expression="&quot;enter phonenumber&quot;" newline="True"/>
+            <output expression="&quot;name&quot;&amp;a&amp;&#13;&#10;&quot;roll no&quot;&amp;b&amp;&#13;&#10;&quot;address&quot;&amp;c&amp;&#13;&#10;&quot;BG&quot;&amp;d&amp;&#13;&#10;&quot;phonenumber&quot;&amp;e&amp;&#13;&#10;&quot;department&quot;&amp;f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
