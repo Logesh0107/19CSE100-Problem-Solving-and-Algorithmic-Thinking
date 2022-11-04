@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="placement"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:58:03 AM"/>
+        <attribute name="created" value="cGxhY2VtZW50OzIwMjIyM01BWUMwMDczOzIwMjItMTEtMDQ7MTA6NDQ6MDAgQU07MzAwMg=="/>
+        <attribute name="edited" value="cGxhY2VtZW50OzIwMjIyM01BWUMwMDczOzIwMjItMTEtMDQ7MTA6NTg6MDMgQU07MTszMTE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="assign two variables a and b"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <output expression="&quot;Enter any value for b&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="new formula for a and b can be written"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <comment text="on using the formula these can be swapped"/>
+            <output expression="&quot;the new a is &quot;&amp;a" newline="True"/>
+            <output expression="&quot;the new b is &quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="placement"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:20:16 AM"/>
+        <attribute name="created" value="cGxhY2VtZW50OzIwMjIyM01BWUMwMDczOzIwMjItMTEtMDQ7MTE6MDI6MTAgQU07Mjk5OA=="/>
+        <attribute name="edited" value="cGxhY2VtZW50OzIwMjIyM01BWUMwMDczOzIwMjItMTEtMDQ7MTE6MjA6MTYgQU07MzszMTE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="assign integers"/>
+            <declare name="a, b, c, r" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <comment text="enter the formula for mod operator "/>
+            <assign variable="c" expression="a/b"/>
+            <assign variable="r" expression="a-(b*c)"/>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

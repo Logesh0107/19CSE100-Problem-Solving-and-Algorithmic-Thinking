@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="placement"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:42:29 AM"/>
+        <attribute name="created" value="cGxhY2VtZW50OzIwMjIyM01BWUMwMDczOzIwMjItMTEtMDQ7MTA6MDU6MjIgQU07MzAwMw=="/>
+        <attribute name="edited" value="cGxhY2VtZW50OzIwMjIyM01BWUMwMDczOzIwMjItMTEtMDQ7MTA6NDI6MjkgQU07MjszMTIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="entering general formula for quadratic equations"/>
+            <output expression="&quot;a(x)^2+b(x)+c=d&quot;" newline="True"/>
+            <comment text="declaring the variables"/>
+            <declare name="x1, x2, a, b, c, d" type="Real" array="False" size=""/>
+            <comment text="applying input for a"/>
+            <input variable="a"/>
+            <comment text="applying input for b"/>
+            <input variable="b"/>
+            <comment text="applying input for c"/>
+            <input variable="c"/>
+            <comment text="applying input for d"/>
+            <input variable="d"/>
+            <comment text="applying the formula for x1"/>
+            <assign variable="x1" expression="(sqrt((b)^2+(4*a*(c-d)))+b)/(2*a)"/>
+            <comment text="applying the formula for x2"/>
+            <assign variable="x2" expression="(sqrt((b)^2-(4*a*(c-d)))-b)/(2*a)"/>
+            <comment text="applying roots for output"/>
+            <output expression="&quot;Roots:&quot;" newline="True"/>
+            <comment text="applying output for x1"/>
+            <output expression="x1&amp;&quot;,&quot;" newline="True"/>
+            <comment text="applying output for x2"/>
+            <output expression="x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
