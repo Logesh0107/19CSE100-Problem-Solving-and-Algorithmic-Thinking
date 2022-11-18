@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22036"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 09:54:48 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzNjsyMDIyMjNNQVlDMDA3MzsyMDIyLTExLTE4OzA5OjA2OjMzIEFNOzMwNjc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzNjsyMDIyMjNNQVlDMDA3MzsyMDIyLTExLTE4OzA5OjU0OjQ4IEFNOzI7MzE4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="entering the name of person&#13;&#10;"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;Enter the name&quot;" newline="True"/>
+            <input variable="name"/>
+            <comment text="entering the account number to withdraw cash"/>
+            <declare name="accountnumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter account number&quot;" newline="True"/>
+            <input variable="accountnumber"/>
+            <declare name="pin" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the pin&quot;" newline="True"/>
+            <input variable="pin"/>
+            <comment text="entering the right pin to withdraw cash"/>
+            <if expression="pin=3333">
+                <then>
+                    <comment text="to show the balance in your account"/>
+                    <declare name="balance" type="Integer" array="False" size=""/>
+                    <output expression="&quot;enter the balance&quot;" newline="True"/>
+                    <input variable="balance"/>
+                    <comment text="enter the right balance of your bank to withdraw"/>
+                    <if expression="balance&gt;499">
+                        <then>
+                            <comment text="entering the amount to withdraw"/>
+                            <declare name="withdrawal" type="Integer" array="False" size=""/>
+                            <output expression="&quot;enter the amount to withdraw&quot;" newline="True"/>
+                            <input variable="withdrawal"/>
+                            <comment text="enter the right balance and amount to withdraw to collect cash"/>
+                            <if expression="withdrawal&lt;balance">
+                                <then>
+                                    <output expression="&quot;please collect your cash and thank you visit again&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;your balance is not sufficient to withdraw&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;sorry your balance is too low to withdraw&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;your pin is wrong, please enter the correct pin&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
