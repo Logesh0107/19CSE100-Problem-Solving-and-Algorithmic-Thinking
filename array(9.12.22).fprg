@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Logesh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:07:29 AM"/>
+        <attribute name="created" value="TG9nZXNoO0RFU0tUT1AtRkJCOU5JNTsyMDIyLTEyLTA5OzA5OjE4OjQxIEFNOzI5MjY="/>
+        <attribute name="edited" value="TG9nZXNoO0RFU0tUT1AtRkJCOU5JNTsyMDIyLTEyLTA5OzExOjA3OjI5IEFNOzI7MzAzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <comment text="declare array and array size"/>
+            <declare name="y" type="Integer" array="True" size="10"/>
+            <comment text="enter number of arrays according to its size"/>
+            <output expression="&quot;enter array 1&quot;" newline="True"/>
+            <input variable="y[0]"/>
+            <output expression="&quot;enter array 2&quot;" newline="True"/>
+            <input variable="y[1]"/>
+            <output expression="&quot;enter array 3&quot;" newline="True"/>
+            <input variable="y[2]"/>
+            <output expression="&quot;enter array 4&quot;" newline="True"/>
+            <input variable="y[3]"/>
+            <output expression="&quot;enter array 5&quot;" newline="True"/>
+            <input variable="y[4]"/>
+            <output expression="&quot;enter array 6&quot;" newline="True"/>
+            <input variable="y[5]"/>
+            <output expression="&quot;enter array 7&quot;" newline="True"/>
+            <input variable="y[6]"/>
+            <output expression="&quot;enter array 8&quot;" newline="True"/>
+            <input variable="y[7]"/>
+            <output expression="&quot;enter array 9&quot;" newline="True"/>
+            <input variable="y[8]"/>
+            <output expression="&quot;enter array 10&quot;" newline="True"/>
+            <input variable="y[9]"/>
+            <comment text="assign as x=0"/>
+            <assign variable="x" expression="0"/>
+            <comment text="use for loop to loop from 0 to 9"/>
+            <for variable="x" start="0" end="9" direction="inc" step="1">
+                <comment text="print the output"/>
+                <output expression="y[x]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
